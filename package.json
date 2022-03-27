@@ -6,7 +6,7 @@
   },
   "name": "vnnative3-tanianalytics",
   "description": "",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.d.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

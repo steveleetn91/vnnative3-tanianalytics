@@ -8,6 +8,9 @@ export default class Vnnative3TaniAnalytics implements Vnnative3TaniAnalyticsInt
     }
     private getOS(): string {
         let os : string = (new VnNativeOsindex).isOs();
+        if(os === "browser") {
+            os = "web";
+        }
         let platforms : any = window;
         if(platforms.vnnativeos) {
             if(platforms.vnnativeos.getOsName()) {
@@ -20,7 +23,8 @@ export default class Vnnative3TaniAnalytics implements Vnnative3TaniAnalyticsInt
         fetch("http://13.212.176.239:8002/api/analytics",{
             method:"POST",
             headers:{
-                "Authorization":"Bearer " + this.appToken
+                "Authorization":"Bearer " + this.appToken,
+                "Content-type":"application/json"
             },
             body:JSON.stringify({
                 page: page,
