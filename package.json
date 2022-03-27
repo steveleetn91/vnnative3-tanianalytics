@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@types/node": "^17.0.23",
+    "typescript": "^4.6.3",
+    "vnnative-3-os": "^1.0.1"
+  },
+  "name": "vnnative3-tanianalytics",
+  "description": "",
+  "version": "1.0.1",
+  "main": "dist/index.d.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steveleetn91/vnnative3-tanianalytics.git"
+  },
+  "keywords": [
+    "stevelee",
+    "taninanalytics"
+  ],
+  "author": "stevelee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steveleetn91/vnnative3-tanianalytics/issues"
+  },
+  "homepage": "https://github.com/steveleetn91/vnnative3-tanianalytics#readme"
+}
