@@ -20,7 +20,7 @@ This is feature tracking when you use Vn Native 3. We use this plugin for App, W
     },(error : {
         code:number,
         message:string
-    }) : {
+    }) => {
         console.log(error);
     })
 
